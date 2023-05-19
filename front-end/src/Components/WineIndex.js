@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Wine from "./Wine";
-// import Footer from "./Footer";
 import "../Css/WineIndex.css"
 
 const API = process.env.REACT_APP_API_URL;
@@ -37,7 +36,6 @@ function Wines() {
             : null}
         </tbody>
       </table>
-      {/* <Footer /> */}
     </div>
   );
 

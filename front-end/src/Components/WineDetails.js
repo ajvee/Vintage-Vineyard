@@ -64,10 +64,10 @@ function getColor(score) {
         <h1>{wine.wine_name} </h1>
         <br></br>
         <h2>Wine Score - <span style={{ color: getColor(wine.rating) }}>{wine.rating}</span></h2>
-          <div><img className="gameImg" alt="GameCover" src={wine.img} width={100}></img></div>
+          <div><img className="wineImg" alt="wineCover" src={wine.img} width={100}></img></div>
         <br></br>
       <h4>Region: {wine.region}</h4>
-      <h4>Grape Blend: {wine.grape_variety}</h4>
+      <h4>Grape Blend: {wine.grape}</h4>
       {/* <h4>: {wine.price}</h4> */}
       <h4>Vintage: {wine.vintage}</h4>
       <h4>Price:</h4>

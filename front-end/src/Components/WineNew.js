@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useState } from "react"
 import { useNavigate, Link  } from "react-router-dom"
+import "../Css/WineNew.css"
 
 const API = process.env.REACT_APP_API_URL
 
@@ -22,17 +23,16 @@ const addWine = (newWine) => {
 
   const [wine, setWine] = useState({
     wine_name: "",
-    rated: "",
+    region: "",
     price: "",
-    platform: "",
-    release_date: "",
-    // game_content: "",
+    grape: "",
+    vintage: "",
     rating: "",
-})
+});
 
 const handleTextChange = (event) => {
-    setWine({...wine, [event.target.id]: event.target.value})
-}
+    setWine({ ...wine, [event.target.id]: event.target.value})
+};
 
 const handleSubmit = (event) => {
     event.preventDefault()
@@ -41,11 +41,11 @@ const handleSubmit = (event) => {
 
   return (
     <div>
-         <form onSubmit={handleSubmit}>
+  <form onSubmit={handleSubmit}>
   <div class="form-group1">
-    <label for="title">Wine Name: </label>
+    <label for="wine_name">Wine Name: </label>
     <input 
-    id="title" 
+    id="wine_name" 
     type="text" 
     value={wine.wine_name} 
     onChange={handleTextChange} 
@@ -53,13 +53,15 @@ const handleSubmit = (event) => {
     class="form-control" 
     required
     />
+    <br></br>
+    <br></br>
 
 
   </div>
   <div class="form-group">
-    <label for="rated">Region: </label>
+    <label for="region">Region: </label>
     <input   
-    id="rated" 
+    id="region" 
     type="text" 
     value={wine.region} 
     onChange={handleTextChange} 
@@ -84,13 +86,13 @@ const handleSubmit = (event) => {
 
 
   <div class="form-group">
-    <label for="platform">Grape Variety: </label>
+    <label for="grape">Grape Variety: </label>
     <input 
-    id="platform" 
+    id="grape" 
     type="text" 
-    value={wine.grape_variety} 
+    value={wine.grape} 
     onChange={handleTextChange} 
-    placeholder="What game console"
+    placeholder=""
     class="form-control" 
     required
     />
@@ -98,10 +100,10 @@ const handleSubmit = (event) => {
 
 
   <div class="form-group">
-    <label for="release_date">Vintage </label>
+    <label for="vintage">Vintage: </label>
     <input 
-    id="release_date" 
-    type="nummber" 
+    id="vintage" 
+    type="number" 
     value={wine.vintage} 
     onChange={handleTextChange}
     placeholder="Year" 
@@ -110,25 +112,10 @@ const handleSubmit = (event) => {
     />
   </div>
 
-
-  {/* <div class="form-group">
-    <label for="game_content">Game Description: </label>
-    <input 
-    id="game_content" 
-    type="text" 
-    value={wine.game_content} 
-    onChange={handleTextChange} 
-    placeholder="Description of game"
-    class="form-control" 
-    required
-    />
-  </div> */}
-
-
   <div class="form-group">
-    <label for="score">Rating: </label>
+    <label for="rating">Rating: </label>
     <input 
-    id="score" 
+    id="rating" 
     type="number" 
     value={wine.rating} 
     onChange={handleTextChange} 
@@ -139,11 +126,13 @@ const handleSubmit = (event) => {
   </div>
 
 <br></br>
+
 <input type="submit" />
+
 </form>
 <Link to={`/wines`}>
-        <button>Back to Wines</button>
-      </Link>
+        <button className="back-btn" >Back to Wines</button>
+</Link>
     </div>
   )
 }
