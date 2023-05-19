@@ -6,11 +6,12 @@ CREATE DATABASE wine_cellar;
 
 CREATE TABLE wines (
     id SERIAL PRIMARY KEY,
-    wine_name TEXT,
+    wine_name VARCHAR,
     img VARCHAR,
     region TEXT,
-    grape_variety TEXT,
+    grape TEXT,
     vintage INTEGER,
-    price DECIMAL,
-    rating INTEGER
+    price VARCHAR,
+    rating INTEGER,
+    notes VARCHAR
 );

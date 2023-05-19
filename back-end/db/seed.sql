@@ -1,15 +1,15 @@
 \c wine_cellar;
 
 
-INSERT INTO wines (wine_name, img, region, grape_variety, vintage, price, rating)
+INSERT INTO wines (wine_name, img, region, grape, vintage, price, rating, notes)
 VALUES
-('Opus One','https://media.bbr.com/s/bbr/20178015994-ms?img404=Default_Wine', 'Napa Valley', 'Bordeaux Blend', 2017, 350.00, 4),
-('Screaming Eagle', 'https://bestofwines.com/wine-images/15850_big.jpg', 'Napa Valley', 'Cabernet Sauvignon', 2015, 3000.00, 4.9),
-('Domaine de la Romanée-Conti Romanée-Conti Grand Cru', 'https://sothebys-md.brightspotcdn.com/01/59/dd7f0c49443fb0501f782774976b/reci-generic.jpg', 'Burgundy', 'Pinot Noir', 2015, 15000.00, 4.8),
-('Château Margaux', 'https://res.cloudinary.com/winecom/image/upload/122451fbs', 'Bordeaux', 'Cabernet Sauvignon', 2010, 1000.00, 4.7),
-('Penfolds Grange', 'https://cdn.klwines.com/images/skus/generated_638149302856255947_1492320x.jpg', 'Barossa Valley', 'Shiraz', 2016, 850.00, 4.6),
-('Sassicaia', 'https://cdn.klwines.com/images/skus/1419992x.jpg','Tuscany', 'Cabernet Sauvignon, Cabernet Franc', 2016, 250.00, 4.5),
-('Ridge Monte Bello', 'https://media.bbr.com/s/bbr/20148005188-ms?img404=Default_Wine', 'California', 'Cabernet Sauvignon', 2014, 200.00, 4.4),
-('Cono Sur Bicicleta Pinot Noir', 'https://images.vivino.com/thumbs/IxiRSgY4R8iEdHXuSynA7g_pb_x960.png', 'Chile', 'Pinot Noir', 2019, 12.00, 3.8),
-('Barefoot Moscato', 'https://cdn.shopify.com/s/files/1/1048/8964/products/lp-wines-liquors-california-white-wines-barefoot-moscato-white-wine-1-5l-28777739845715_1024x1024.jpg?v=1633464181', 'California', 'Moscato', 2020, 8.00, 4.1),
-('Yellow Tail Shiraz', 'https://icdn.bottlenose.wine/images/full/513748.jpg?min-w=200&min-h=200&fit=crop', 'South Eastern Australia', 'Shiraz', 2018, 10.00, 3.7);
+('Opus One','https://media.bbr.com/s/bbr/20178015994-ms?img404=Default_Wine', 'Napa Valley', 'Bordeaux Blend', 2017, '$350.00', 4, 'A harmonious blend of Bordeaux varietals from Napa Valley. Rich flavors of black fruits, hints of oak, and a smooth, elegant finish.'),
+('Screaming Eagle', 'https://bestofwines.com/wine-images/15850_big.jpg', 'Napa Valley', 'Cabernet Sauvignon', 2015, '$3000.00', 4.9, 'An exceptional Cabernet Sauvignon from Napa Valley. Intense aromas of dark berries, velvety tannins, and a long, lingering finish.'),
+('Domaine de la Romanée-Conti Romanée-Conti Grand Cru', 'https://sothebys-md.brightspotcdn.com/01/59/dd7f0c49443fb0501f782774976b/reci-generic.jpg', 'Burgundy', 'Pinot Noir', 2015, '$15000.00', 4.8, 'Tasting Notes: A prestigious Pinot Noir from Burgundy. Delicate aromas of red fruits, earthy undertones, and a complex, lingering finish.'),
+('Château Margaux', 'https://res.cloudinary.com/winecom/image/upload/122451fbs', 'Bordeaux', 'Cabernet Sauvignon', 2010, '$1000.00', 4.7, 'An iconic Cabernet Sauvignon from Bordeaux. Elegant flavors of blackcurrants, subtle spices, and a refined, velvety texture.'),
+('Penfolds Grange', 'https://cdn.klwines.com/images/skus/generated_638149302856255947_1492320x.jpg', 'Barossa Valley', 'Shiraz', 2016, '$850.00', 4.6, 'A renowned Shiraz from Barossa Valley. Rich and full-bodied with intense blackberry flavors, hints of chocolate, and a long, opulent finish.'),
+('Sassicaia', 'https://cdn.klwines.com/images/skus/1419992x.jpg','Tuscany', 'Cabernet Sauvignon, Cabernet Franc', 2016, '$250.00', 4.5, 'An exquisite blend of Cabernet Sauvignon and Cabernet Franc from Tuscany. Notes of ripe berries, herbs, and a structured, persistent finish.'),
+('Ridge Monte Bello', 'https://media.bbr.com/s/bbr/20148005188-ms?img404=Default_Wine', 'California', 'Cabernet Sauvignon', 2014, '$200.00', 4.4, 'A superb Cabernet Sauvignon from California. Complex flavors of black cherries, cassis, and a velvety texture with well-integrated tannins.'),
+('Cono Sur Bicicleta Pinot Noir', 'https://images.vivino.com/thumbs/IxiRSgY4R8iEdHXuSynA7g_pb_x960.png', 'Chile', 'Pinot Noir', 2019, '$12.00', 3.8, 'A vibrant Pinot Noir from Chile. Bright red fruit flavors, hints of spice, and a refreshing acidity make it an enjoyable and versatile wine.'),
+('Barefoot Moscato', 'https://cdn.shopify.com/s/files/1/1048/8964/products/lp-wines-liquors-california-white-wines-barefoot-moscato-white-wine-1-5l-28777739845715_1024x1024.jpg?v=1633464181', 'California', 'Moscato', 2020, '$8.00', 4.1, 'A sweet and aromatic Moscato from California. Luscious flavors of ripe peaches, tropical fruits, and a light, refreshing finish.'),
+('Yellow Tail Shiraz', 'https://icdn.bottlenose.wine/images/full/513748.jpg?min-w=200&min-h=200&fit=crop', 'South Eastern Australia', 'Shiraz', 2018, '$10.00', 3.7, 'An approachable Shiraz from South Eastern Australia. Juicy red berry flavors, a touch of spice, and a smooth, easy-drinking profile.');
