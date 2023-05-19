@@ -1,0 +1,16 @@
+/* ModalDelete.css */
+.delete-message {
+    color: burgundy;
+  }
+  
+  .btn-burgundy {
+    color: #030303;
+    background-color: burgundy;
+    border-color: burgundy;
+  }
+  
+  .btn-burgundy:hover {
+    background-color: rgb(161, 20, 100);
+    border-color: rgb(243, 241, 241);
+  }
+  

@@ -20,7 +20,9 @@ WineApp.css
   }
   
   input[type="text"],
-  input[type="number"] {
+  input[type="number"],
+  input[type="varchar"]
+  {
     width: 70%;
     padding: 6px;
     font-size: 14px;

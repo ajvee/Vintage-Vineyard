@@ -16,6 +16,8 @@ const [wine, setWine] = useState({
     vintage: "",
     grape: "",
     price: "",
+    notes: "",
+    img:""
 })
 
 
@@ -68,10 +70,29 @@ function getColor(score) {
     <div className="edit">
         <h1> {wine.wine_name}</h1>
          <h1> <span style={{ color: getColor(wine.rating) }}>{wine.rating}</span> </h1> 
+         <br></br>
+         <div><img className="wineImg" alt="wineCover" src={wine.img} width={100}></img></div>
+
     </div>
 
 
+
       <form onSubmit={handleSubmit}>
+
+    <div className="form-group">
+    <label htmlFor="img">Photo</label>
+    <input 
+    id="img" 
+    type="varchar" 
+    value={wine.img} 
+    onChange={handleTextChange}
+    placeholder="Add image URL here" 
+    className="form-control" 
+    required
+    />
+
+
+  </div>
   <div className="form-group">
     <label htmlFor="wine_name">Wine Name: </label>
     <input 
@@ -104,7 +125,7 @@ function getColor(score) {
     <label htmlFor="price">Price: </label>
     <input 
     id="price" 
-    type="number" 
+    type="varchar" 
     value={wine.price} 
     onChange={handleTextChange} 
     className="form-control" 
@@ -151,11 +172,23 @@ function getColor(score) {
     />
   </div>
 
+  <div className="form-group">
+    <label htmlFor="notes">Notes: </label>
+    <input 
+    id="notes" 
+    type="text" 
+    value={wine.notes} 
+    onChange={handleTextChange} 
+    className="form-control" 
+    required
+    />
+  </div>
+
 <br></br>
 <input type="submit" />
 </form>
 <Link to={`/wines/${id}`}>
-        <button>Back to the cellar</button>
+        <button>Back to details</button>
       </Link>
     </>
   )

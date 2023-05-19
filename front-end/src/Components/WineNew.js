@@ -28,6 +28,7 @@ const addWine = (newWine) => {
     grape: "",
     vintage: "",
     rating: "",
+    notes: "",
 });
 
 const handleTextChange = (event) => {
@@ -49,11 +50,10 @@ const handleSubmit = (event) => {
     type="text" 
     value={wine.wine_name} 
     onChange={handleTextChange} 
-    placeholder="Name of wine"
+    placeholder="Name of wine..."
     class="form-control" 
     required
     />
-    <br></br>
     <br></br>
 
 
@@ -71,18 +71,21 @@ const handleSubmit = (event) => {
     />
   </div>
 
+
   <div class="form-group">
     <label for="price">Price: </label>
     <input 
     id="price" 
-    type="number" 
+    type="varchar" 
     value={wine.price} 
     onChange={handleTextChange} 
-    placeholder="Price"
+    placeholder="Price..."
     class="form-control" 
     required
     />
   </div>
+
+
 
 
   <div class="form-group">
@@ -92,7 +95,7 @@ const handleSubmit = (event) => {
     type="text" 
     value={wine.grape} 
     onChange={handleTextChange} 
-    placeholder=""
+    placeholder="..."
     class="form-control" 
     required
     />
@@ -106,7 +109,7 @@ const handleSubmit = (event) => {
     type="number" 
     value={wine.vintage} 
     onChange={handleTextChange}
-    placeholder="Year" 
+    placeholder="Year..." 
     class="form-control" 
     required
     />
@@ -119,12 +122,24 @@ const handleSubmit = (event) => {
     type="number" 
     value={wine.rating} 
     onChange={handleTextChange} 
-    placeholder="Rating from 0-5"
+    placeholder="Rating from 0-5..."
     class="form-control" 
     required
     />
   </div>
 
+  <div class="form-group">
+    <label for="notes">Tasting Notes: </label>
+    <input 
+    id="notes" 
+    type="text" 
+    value={wine.notes} 
+    onChange={handleTextChange} 
+    placeholder="..."
+    class="form-control" 
+    required
+    />
+  </div>
 <br></br>
 
 <input type="submit" />

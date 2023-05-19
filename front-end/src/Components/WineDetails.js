@@ -2,7 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { Link, useParams, useNavigate } from "react-router-dom"
 // import Reviews from "./Reviews"
-// import ModalDelete from "./ModalDelete"
+import ModalDelete from "./ModalDelete"
 
 const API = process.env.REACT_APP_API_URL
 
@@ -54,7 +54,6 @@ function getColor(score) {
     return color;
   }
 
-//rated, title, genre, platform, release_date, content
   return (
 
     <article className="details">
@@ -68,7 +67,7 @@ function getColor(score) {
         <br></br>
       <h4>Region: {wine.region}</h4>
       <h4>Grape Blend: {wine.grape}</h4>
-      {/* <h4>: {wine.price}</h4> */}
+      <h4>Tasting Notes: {wine.notes}</h4>
       <h4>Vintage: {wine.vintage}</h4>
       <h4>Price:</h4>
       <p>{wine.price}</p>
@@ -86,10 +85,9 @@ function getColor(score) {
            <Link to={`/wines/${id}/edit`}>
           <button>Edit</button>
           </Link>
-          {/* <ModalDelete handleDelete={handleDelete} />         */}
+          <ModalDelete handleDelete={handleDelete} />        
         </div>
     </div>
- {/* <Reviews />  */}
   </article> 
  )
  

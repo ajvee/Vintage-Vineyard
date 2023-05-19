@@ -5,6 +5,8 @@ function Wine({ wine }) {
     <tr>
 
       <td className="title">
+      <div> <img className="wineImg" alt="wineCover" src={wine.img} width={100}></img></div>
+
         <Link to={`/wines/${wine.id}`}
         >
           {wine.wine_name}
