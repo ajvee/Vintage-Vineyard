@@ -1,0 +1,16 @@
+    .container {
+    background-image: url('https://media.istockphoto.com/id/498463858/photo/italy-villa-entrance-gate-and-estate.jpg?s=612x612&w=0&k=20&c=7j01TjSvyBLO3OUxroDz2LZDepS44Wf9WsgIBMljB8I=');
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    }
+
+    .header {
+       display: flex;
+       justify-content: center;
+       align-items: flex-start;
+    }

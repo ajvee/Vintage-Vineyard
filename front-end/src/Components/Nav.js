@@ -10,11 +10,11 @@ function Nav() {
         </li>
 
         <li>
-          <Link to="/wines">View All Wines</Link>
+          <Link to="/wines">View The Cellar</Link>
         </li>
 
         <li>
-          <Link to="/wines/new">Add New Wines</Link>
+          <Link to="/wines/new">Add A New Wine</Link>
         </li>
       </ul>
     </nav>

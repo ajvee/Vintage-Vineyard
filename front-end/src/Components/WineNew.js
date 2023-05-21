@@ -29,6 +29,7 @@ const addWine = (newWine) => {
     vintage: "",
     rating: "",
     notes: "",
+    img:"",
 });
 
 const handleTextChange = (event) => {
@@ -43,6 +44,7 @@ const handleSubmit = (event) => {
   return (
     <div>
   <form onSubmit={handleSubmit}>
+
   <div class="form-group1">
     <label for="wine_name">Wine Name: </label>
     <input 
@@ -138,6 +140,18 @@ const handleSubmit = (event) => {
     placeholder="..."
     class="form-control" 
     required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="img">Wine Photo</label>
+    <input 
+    id="img" 
+    type="varchar" 
+    value={wine.img} 
+    onChange={handleTextChange} 
+    placeholder="Add image URL here" 
+    class="form-control" 
     />
   </div>
 <br></br>

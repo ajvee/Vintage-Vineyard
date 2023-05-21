@@ -21,11 +21,11 @@ function Wines() {
         <thead>
           <tr>
             <th className="Wines-header">Wine Name</th>
-            <th className="Wines-header">Grape Variety</th>
+            <th className="Wines-header">Grape Variety/Varietal</th>
             <th className="Wines-header">Price</th>
             <th className="Wines-header">Region</th>
             <th className="Wines-header">Vintage</th>
-            <th className="Wines-header">Rating</th>
+            <th className="Wines-header">Rating out of 5</th>
           </tr>
         </thead>
         <tbody>

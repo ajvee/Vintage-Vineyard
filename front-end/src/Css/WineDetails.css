@@ -1,0 +1,56 @@
+Copy code
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.details-container {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.wineImg {
+  margin-top: 20px;
+  max-width: 200px;
+}
+
+.section {
+  width:80%;
+  background-color: #1f4268;
+  color: white;
+  padding: 0px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.section-content {
+  margin-bottom: 10px;
+}
+
+.showNavigation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  

@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Link, useParams, useNavigate } from "react-router-dom"
-// import Reviews from "./Reviews"
+import "../Css/WineDetails.css";
 import ModalDelete from "./ModalDelete"
 
 const API = process.env.REACT_APP_API_URL
@@ -59,24 +59,38 @@ function getColor(score) {
     <article className="details">
         
         {wine && (
-        <div className="details">
+        <div className="details-container">
         <h1>{wine.wine_name} </h1>
         <br></br>
         <h2>Wine Score - <span style={{ color: getColor(wine.rating) }}>{wine.rating}</span></h2>
           <div><img className="wineImg" alt="wineCover" src={wine.img} width={100}></img></div>
         <br></br>
-      <h4>Region: {wine.region}</h4>
-      <h4>Grape Blend: {wine.grape}</h4>
-      <h4>Tasting Notes: {wine.notes}</h4>
-      <h4>Vintage: {wine.vintage}</h4>
-      <h4>Price:</h4>
-      <p>{wine.price}</p>
+        <div className="section">
+        <h4 className="section-title">Region:</h4>
+        <p className="section-content">{wine.region}</p>
+        </div>      
+        <div className="section">
+        <h4 className="section-title">Grape Blend:</h4>
+        <p className="section-content">{wine.grape}</p>
+        </div>
+        <div className="section">
+        <h4 className="section-title">Tasting Notes:</h4>
+        <p className="section-content">{wine.notes}</p>
+        </div>      
+        <div className="section">
+        <h4 className="section-title">Vintage:</h4>
+        <p className="section-content">{wine.vintage}</p>
+        </div>
+        <div className="section">
+        <h4 className="section-title">Price:</h4>
+        <p className="section-content">{wine.price}</p>
+        </div>
             </div>
         )}
         
       <div className="showNavigation">
 
-        <div>
+        <div className="buttonContainer">
           {" "}
           <Link to={`/wines`} >
           <button>Back</button>
