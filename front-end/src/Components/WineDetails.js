@@ -60,7 +60,7 @@ function getColor(score) {
         
         {wine && (
         <div className="details-container">
-        <h1>{wine.wine_name} </h1>
+        <h1 style={{ fontStyle: 'italic'}}>{wine.wine_name} </h1>
         <br></br>
         <h2>Wine Score - <span style={{ color: getColor(wine.rating) }}>{wine.rating}</span></h2>
           <div><img className="wineImg" alt="wineCover" src={wine.img} width={100}></img></div>
